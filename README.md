@@ -30,6 +30,7 @@ Note: server.properties file will be available in kafka/config folder (Copied to
 
 Step-6 : Create Kakfa Topic using below command from kafka/bin/windows folder
 
+
 Command : kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic octbatch-ineuron-topic
 
 Updated Command:-> kafka-topics.bat --create --topic test-topic --bootstrap-server localhost:9092 --replication-factor 1 --partitions 4
