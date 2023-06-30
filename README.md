@@ -44,10 +44,13 @@ Step-7 : View created Topics using below command
 
 
 For Producer adding msg
+
     Command : kafka-console-producer.bat --broker-list localhost:9092 --topic mangesh-topic
 
 For Consumer listen
+
       Command :  kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic mangesh-topic --from-beginning
 
 For bulk message pushing using csv file
+
       Command : kafka-console-producer.bat --broker-list localhost:9092 --topic test-topic <D:\Kafka\file.csv
