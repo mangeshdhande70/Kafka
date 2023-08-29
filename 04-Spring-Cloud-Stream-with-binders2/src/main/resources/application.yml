@@ -1,0 +1,13 @@
+spring:
+  cloud:
+#    function:
+#      definition: consumer;producer
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092  
+      bindings:
+        producer-out-0:
+          destination: first-topic-01
+        consumer-in-0:
+          destination: first-topic-01

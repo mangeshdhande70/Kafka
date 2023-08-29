@@ -1,0 +1,49 @@
+
+server:
+  port: 9999
+
+#Kafka Configuration
+
+
+
+
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        output-channel:
+          destination: my-kafka-topic
+          contentType: application/json
+        input-channel:
+          destination: my-other-topic
+          contentType: application/json
+
+
+
+
+
+
+  
+                   
+#
+
+#Kafka 
+#spring.kafka.bootstrap-servers=localhost:9092
+#spring.kafka.template.default-topic=Users                   
+                   
+#Database Configuration
+  datasource:
+    url: jdbc:mysql://localhost:3306/db
+    username: root
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+#spring.kafka.template.default-topic    
+#Topic Name    
+                   

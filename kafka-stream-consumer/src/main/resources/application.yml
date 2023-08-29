@@ -1,0 +1,13 @@
+
+
+server:
+  port: 8879
+
+
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: test-stream

@@ -1,0 +1,14 @@
+
+
+
+server:
+  port: 8878
+
+
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: test-stream

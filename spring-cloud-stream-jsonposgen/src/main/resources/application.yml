@@ -1,0 +1,31 @@
+
+server:
+  port: 9901
+  
+
+
+
+
+spring:
+  kafka:
+    producer:
+      client-id: rest-producer
+      bootstrap-servers:
+      - localhost:9092
+      key-serializer:
+        org.apache.kafka.common.serialization.StringSerializer
+      value-serializer:
+        org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring:
+          json:
+             add:
+               type:
+                   headers: true 
+
+application:
+  configs:
+     invoice.count: 60
+     topic.name: pos-topic        
+ 
+                 
